@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: white;
+  background: #1d1b1b;
+}
+
+.navbar {
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+}
+
+.aide {
+  margin: 10px;
+  background: #9b9797;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-align: end;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  width: 75%;
+  margin-left: 10%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.script {
+  background: beige;
+  color: #000000;
+  position: relative;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 1.3em;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.script li {
+  margin: 25px;
+}
+
+.script li span {
+  color: #c90808;
+  font-weight: 900;
+  text-shadow: 1px 3px 0 #969696, 1px 5px 3px #aba8a8, 7px 7px 0px rgba(242, 241, 245, 0);
+}
+
+.script li ruby {
+  font-weight: bold;
+}
+
+.francais {
+  list-style: none;
+  display: none;
+}
+
+rt {
+  color: #0b96f3;
+  font-size: 0.7em;
+  visibility: hidden;
+}
+
+ruby:hover {
+  cursor: pointer;
+}
+
+ruby:hover rt {
+  visibility: visible;
+}
+
+.francais {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+  display: block;
+}
+
+a {
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+footer {
+  height: 5rem;
+  padding: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

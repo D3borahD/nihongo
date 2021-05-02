@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: white;
+  background: rgb(29, 27, 27);
+}
+
+.navbar {
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+}
+
+.aide {
+  margin: 10px;
+  background: rgb(155, 151, 151);
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-align: end;
+}
+main {
+  display: flex;
+}
+
+section {
+  width: 75%;
+  margin-left: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.script {
+  background: beige;
+  color: #000000;
+  position: relative;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 1.3em;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+  li {
+    margin: 25px;
+    span {
+      color: rgb(201, 8, 8);
+      font-weight: 900;
+      text-shadow: 1px 3px 0 #969696, 1px 5px 3px #aba8a8,
+        7px 7px 0px rgba(242, 241, 245, 0);
+    }
+
+    ruby {
+      font-weight: bold;
+    }
+  }
+}
+
+.francais {
+  list-style: none;
+  display: none;
+}
+
+rt {
+  color: rgb(11, 150, 243);
+  font-size: 0.7em;
+  visibility: hidden;
+}
+
+ruby:hover {
+  cursor: pointer;
+  rt {
+    visibility: visible;
+  }
+}
+
+.francais {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+  display: block;
+}
+
+a {
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.red {
+  color: red;
+}
+
+footer {
+  height: 5rem;
+  padding: 2rem;
+}
