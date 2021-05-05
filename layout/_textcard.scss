@@ -1,0 +1,13 @@
+.card {
+  background: beige;
+  color: #000000;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 1.3em;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.card-title a {
+  color: black;
+}

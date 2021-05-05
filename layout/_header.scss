@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  background-color: gray;
+  display: flex;
+}
+
+.header__toggle {
+  position: relative;
+  background-color: rgb(34, 18, 18);
+  cursor: pointer;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.header__toggle--menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.header__toggle--menu > div {
+  width: 1rem;
+  height: 0.1rem;
+  margin-top: 0.2rem;
+  background-color: white;
+  transition: 0.5s ease;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.header__toggle--menu.active {
+  > div:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+  }
+  > div:nth-child(2) {
+    opacity: 0;
+  }
+  > div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+  }
+}
