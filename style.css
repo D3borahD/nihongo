@@ -121,6 +121,32 @@ li {
   bottom: 50%;
 }
 
+.menu {
+  display: none;
+  background-color: black;
+  height: 5.5rem;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu__liste {
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 15px;
+}
+
+.menu__liste:hover {
+  background: beige;
+  color: black;
+  font-weight: bold;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .card {
   background: beige;
   color: #000000;
@@ -151,6 +177,7 @@ body {
 section {
   width: 75%;
   margin-left: 10%;
+  margin-top: 10%;
 }
 
 .dialogue {
