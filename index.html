@@ -14,43 +14,44 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header__toggle">
-        <div class="header__toggle--menu">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="header">
+        <div class="header__toggle">
+          <div class="header__toggle--menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
+        <ul class="menu">
+          <li class="menu__liste"><i class="fas fa-home"></i>　メインページ</li>
+          <li class="menu__liste">
+            <i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
+          </li>
+        </ul>
       </div>
-      <ul class="menu">
-        <li class="menu__liste"><i class="fas fa-home"></i>　メインページ</li>
-        <li class="menu__liste">
-          <i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
-        </li>
-      </ul>
 
       <!-- toggle furigana
-
-
 -->
-
-      <div class="toggle__furigana">
-        <input type="checkbox" id="furigana" name="furigana" />
-        <label for="furigana">あ</label>
-      </div>
-      <!-- toggle français 
-
-
--->
-      <div class="toggle__traduction">
-        <input
-          type="checkbox"
-          class="checkbox"
-          id="traduction"
-          name="francais"
-        />
-        <label class="toggle--traduction--label" for="traduction">
-          <div class="french-flag"></div>
-        </label>
+      <div class="toggle__help">
+        <div class="toggle__furigana">
+          <input
+            type="checkbox"
+            id="furigana"
+            class="toggle__furigana--checkbox"
+            name="furigana"
+          />
+          <label for="furigana" class="toggle__furigana--label"> あ </label>
+        </div>
+        <!-- toggle français -->
+        <div class="toggle__traduction">
+          <input
+            type="checkbox"
+            id="french"
+            class="toggle__traduction--checkbox"
+            name="traduction"
+          />
+          <label for="traduction" class="toggle__traduction--label"> </label>
+        </div>
       </div>
     </header>
 

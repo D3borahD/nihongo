@@ -4,6 +4,7 @@ header {
   padding: 1rem;
   background-color: gray;
   display: flex;
+  justify-content: space-between;
 }
 
 .header__toggle {
@@ -13,6 +14,7 @@ header {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__toggle--menu {
@@ -26,7 +28,7 @@ header {
   height: 0.1rem;
   margin-top: 0.2rem;
   background-color: white;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 li {
@@ -58,6 +60,7 @@ li {
   height: 5.5rem;
   border-radius: 15px;
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .menu.active {
   display: block;
@@ -74,4 +77,13 @@ li {
   color: black;
   font-weight: bold;
   transform: scale(1.3);
+}
+
+//
+
+.toggle__help {
+  display: flex;
+}
+.toggle__furigana {
+  margin-right: 1rem;
 }

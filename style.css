@@ -1,3 +1,46 @@
+.toggle__furigana {
+  border: 1px solid white;
+  background: white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  position: relative;
+}
+
+.toggle__furigana--checkbox {
+  display: none;
+}
+
+.toggle__furigana--label {
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.toggle__traduction {
+  border: 1px solid white;
+  background: -webkit-gradient(linear, left top, right top, from(#3f5efb), color-stop(34%, #0e58f1), color-stop(34%, #fefdfd), color-stop(70%, #fbf6f7), color-stop(70%, #ff0002));
+  background: linear-gradient(90deg, #3f5efb 0%, #0e58f1 34%, #fefdfd 34%, #fbf6f7 70%, #ff0002 70%);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  color: red;
+}
+
+.toggle__traduction--checkbox {
+  display: none;
+}
+
+.toggle__traduction--label {
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
 .buttons-read {
   color: black;
 }
@@ -68,6 +111,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__toggle {
@@ -77,6 +123,8 @@ header {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__toggle--menu {
@@ -92,8 +140,8 @@ header {
   height: 0.1rem;
   margin-top: 0.2rem;
   background-color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 li {
@@ -127,6 +175,8 @@ li {
   height: 5.5rem;
   border-radius: 15px;
   padding: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu.active {
@@ -145,6 +195,16 @@ li {
   font-weight: bold;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.toggle__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toggle__furigana {
+  margin-right: 1rem;
 }
 
 .card {
@@ -177,7 +237,7 @@ body {
 section {
   width: 75%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .dialogue {
