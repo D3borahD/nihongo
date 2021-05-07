@@ -70,6 +70,14 @@ header {
   cursor: pointer;
   padding: 0.3rem;
   border-radius: 15px;
+  a {
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    &:visited {
+      color: white;
+    }
+  }
 }
 .menu__liste:hover {
   background: beige;

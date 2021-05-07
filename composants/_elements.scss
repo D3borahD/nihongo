@@ -1,0 +1,36 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+//level element
+.fa-signal {
+  font-size: 1.5rem;
+}
+
+.fa-signal.easy {
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(203, 202, 202, 1) 40%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-signal.medium {
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(203, 202, 202, 1) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-signal.hard {
+  color: black;
+}

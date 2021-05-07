@@ -51,17 +51,30 @@
     height: 100%;
   }
 }
-//Radio Help end ///////////////////////////////////////////
 
-// A RANGER
-
-a {
-  margin-top: 15px;
-  color: white;
-  text-decoration: none;
+//Button LECTURE
+.bouton-read {
+  font-size: 0.9rem;
   cursor: pointer;
-  &:visited {
-    text-decoration: none;
-    color: white;
+  font-weight: bold;
+  width: 4rem;
+
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: rgb(231, 230, 230);
+  padding-bottom: 2px;
+  a,
+  a:visited {
+    color: black;
   }
 }
+
+// .indisponible {
+//   &::before {
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     color: black;
+//   }
+// }

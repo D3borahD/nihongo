@@ -1,10 +1,58 @@
 section {
-  width: 75%;
-  margin-left: 10%;
-  margin-top: 15%;
+  width: 95%;
+  margin: 25% auto 5%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .dialogue {
-  background: beige;
+  background: rgb(209, 206, 206);
+  padding-bottom: 2rem;
   color: #000000;
+  h1 {
+    padding: 1rem;
+  }
+}
+
+@media screen and(min-width:800px) {
+  .dialogue__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    justify-content: center;
+  }
+}
+
+.card {
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  width: 80%;
+  color: #000000;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 18px 28px 61px 5px rgba(0, 0, 0, 0.38);
+}
+
+.card-title {
+  background: rgb(202, 202, 202);
+  margin-bottom: 1rem;
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.card-situation {
+  margin-bottom: 1rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom-profil img {
+  margin-right: 0.5rem;
 }
