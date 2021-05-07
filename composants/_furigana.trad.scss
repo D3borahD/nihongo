@@ -1,0 +1,23 @@
+rt {
+  color: red;
+  font-size: 0.7em;
+  visibility: hidden;
+  font-weight: bold;
+}
+
+ruby:hover {
+  cursor: pointer;
+  rt {
+    visibility: visible;
+  }
+}
+rt.active {
+  visibility: visible;
+}
+
+.francais {
+  visibility: hidden;
+}
+.francais.active {
+  visibility: visible;
+}

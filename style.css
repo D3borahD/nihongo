@@ -2,8 +2,8 @@
   border: 1px solid white;
   background: white;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   text-align: center;
   color: red;
   font-weight: bold;
@@ -17,7 +17,9 @@
 .toggle__furigana--label {
   background-color: white;
   cursor: pointer;
+  border-radius: 50%;
   text-align: center;
+  font-size: 1rem;
 }
 
 .toggle__traduction {
@@ -25,8 +27,8 @@
   background: -webkit-gradient(linear, left top, right top, from(#3f5efb), color-stop(34%, #0e58f1), color-stop(34%, #fefdfd), color-stop(70%, #fbf6f7), color-stop(70%, #ff0002));
   background: linear-gradient(90deg, #3f5efb 0%, #0e58f1 34%, #fefdfd 34%, #fbf6f7 70%, #ff0002 70%);
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   text-align: center;
   color: red;
 }
@@ -36,55 +38,15 @@
 }
 
 .toggle__traduction--label {
-  background-color: white;
   cursor: pointer;
+  border-radius: 50%;
   text-align: center;
+  font-size: 1rem;
 }
 
-.buttons-read {
-  color: black;
-}
-
-.aide {
-  margin: 10px;
-  background: #9b9797;
-  padding: 5px 15px;
-  border-radius: 20px;
-  text-align: end;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.francais {
-  list-style: none;
-  display: none;
-}
-
-rt {
-  color: #0b96f3;
-  font-size: 0.7em;
-  visibility: hidden;
-}
-
-ruby:hover {
-  cursor: pointer;
-}
-
-ruby:hover rt {
-  visibility: visible;
-}
-
-.francais {
-  visibility: hidden;
-}
-
-.active {
-  visibility: visible;
-  display: block;
+.toggle__traduction--label > .toggle__traduction--label--element {
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -99,8 +61,35 @@ a:visited {
   color: white;
 }
 
-.red {
+rt {
   color: red;
+  font-size: 0.7em;
+  visibility: hidden;
+  font-weight: bold;
+}
+
+ruby:hover {
+  cursor: pointer;
+}
+
+ruby:hover rt {
+  visibility: visible;
+}
+
+rt.active {
+  visibility: visible;
+}
+
+.francais {
+  visibility: hidden;
+}
+
+.francais.active {
+  visibility: visible;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -108,16 +97,23 @@ header {
   height: 4rem;
   padding: 1rem;
   background-color: gray;
+  border: 1px solid grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .header__toggle {
-  position: relative;
+  position: fixed;
+  top: 1rem;
   background-color: #221212;
   cursor: pointer;
   border-radius: 50%;
@@ -142,11 +138,6 @@ header {
   background-color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-li {
-  list-style: none;
-  cursor: pointer;
 }
 
 .header__toggle--menu.active > div:nth-child(1) {
@@ -177,6 +168,8 @@ li {
   padding: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 4rem;
 }
 
 .menu.active {
@@ -191,10 +184,13 @@ li {
 
 .menu__liste:hover {
   background: beige;
-  color: black;
   font-weight: bold;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.menu__liste:hover a {
+  color: black;
 }
 
 .toggle__help {
@@ -207,6 +203,26 @@ li {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+  header {
+    height: 5rem;
+  }
+  .header__toggle {
+    display: none;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    height: 4rem;
+    background-color: gray;
+  }
+  .menu__liste {
+    margin-right: 2rem;
+  }
+}
+
 .card {
   background: beige;
   color: #000000;
@@ -215,10 +231,6 @@ li {
   font-size: 1.3em;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.card-title a {
-  color: black;
 }
 
 * {

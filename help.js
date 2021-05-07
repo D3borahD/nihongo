@@ -1,8 +1,7 @@
 const furigana = document.getElementById("furigana");
-const romajiAdd = document.getElementById("romaji");
 const traduction = document.getElementById("french");
+
 const toggleRt = document.querySelectorAll("rt");
-const toggleRomaji = document.querySelectorAll(".romaji");
 const toggleTraduction = document.querySelectorAll(".francais");
 
 //TOGGLE Hiragana
