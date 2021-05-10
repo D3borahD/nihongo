@@ -280,6 +280,10 @@ body {
   font-size: 1rem;
 }
 
+ul {
+  padding: 0;
+}
+
 section {
   width: 95%;
   margin: 25% auto 5%;
@@ -287,13 +291,25 @@ section {
   text-align: center;
 }
 
-.dialogue {
+.dialogue,
+.dialogue__page {
   background: #d1cece;
   padding-bottom: 2rem;
   color: #000000;
 }
 
-.dialogue h1 {
+.dialogue h1,
+.dialogue__page h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.dialogue__situation {
+  background: black;
+  color: white;
+  width: 95%;
+  margin: 0.5rem auto;
+  border-radius: 10px;
   padding: 1rem;
 }
 
@@ -340,6 +356,13 @@ section {
   width: 7rem;
   border-radius: 50%;
   margin: auto 0.2rem;
+}
+
+.dialogue__head--text {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .card {
@@ -394,5 +417,78 @@ section {
   border-radius: 50%;
   border: 1px solid white;
   background: black;
+}
+
+.script__interlocuteur {
+  max-width: 600px;
+  margin: auto;
+}
+
+.script__interlocuteur img {
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+  background: black;
+  border-radius: 50%;
+}
+
+.script__interlocuteur .japonais {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  max-width: 75%;
+}
+
+.script__interlocuteur .francais {
+  width: 90%;
+  margin: 0.7rem auto;
+}
+
+.script__interlocuteur__un,
+.script__interlocuteur__deux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.script__interlocuteur__un .japonais::before,
+.script__interlocuteur__deux .japonais::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.script__interlocuteur__un .japonais {
+  margin-left: 0.6rem;
+}
+
+.script__interlocuteur__un .japonais::before {
+  height: 0;
+  width: 0;
+  border-bottom: 1rem solid white;
+  border-left: 1rem solid transparent;
+  top: 1.5rem;
+  left: -1rem;
+}
+
+.script__interlocuteur__deux {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.script__interlocuteur__deux .japonais {
+  margin-right: 0.6rem;
+}
+
+.script__interlocuteur__deux .japonais::before {
+  border-bottom: 1rem solid white;
+  border-right: 1rem solid transparent;
+  top: 1.5rem;
+  right: -1rem;
 }
 /*# sourceMappingURL=style.css.map */

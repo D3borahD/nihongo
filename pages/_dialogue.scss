@@ -5,13 +5,24 @@ section {
   text-align: center;
 }
 
-.dialogue {
+.dialogue,
+.dialogue__page {
   background: rgb(209, 206, 206);
   padding-bottom: 2rem;
   color: #000000;
   h1 {
     padding: 1rem;
+    font-size: 2rem;
   }
+}
+
+.dialogue__situation {
+  background: black;
+  color: white;
+  width: 95%;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 @media screen and(min-width:800px) {
@@ -22,7 +33,7 @@ section {
   }
 }
 
-// HEAD PROFILS
+// HEAD PROFILS GENERAL
 .dialogue__head {
   background-color: black;
   color: white;
@@ -47,7 +58,11 @@ section {
   margin: auto 0.2rem;
 }
 
-// FIN HEAD PRFOFIL
+// FIN HEAD PROFIL GENERAL
+
+.dialogue__head--text {
+  flex-direction: row;
+}
 
 .card {
   background: beige;
@@ -86,4 +101,67 @@ section {
   border-radius: 50%;
   border: 1px solid white;
   background: black;
+}
+
+// DIALOGUE
+
+.script__interlocuteur {
+  max-width: 600px;
+  margin: auto;
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    background: black;
+    border-radius: 50%;
+  }
+  .japonais {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    max-width: 75%;
+  }
+  .francais {
+    width: 90%;
+    margin: 0.7rem auto;
+  }
+}
+.script__interlocuteur__un,
+.script__interlocuteur__deux {
+  display: flex;
+  .japonais::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+  }
+}
+
+.script__interlocuteur__un {
+  .japonais {
+    margin-left: 0.6rem;
+  }
+  .japonais::before {
+    height: 0;
+    width: 0;
+    border-bottom: 1rem solid white;
+    border-left: 1rem solid transparent;
+    top: 1.5rem;
+    left: -1rem;
+  }
+}
+
+.script__interlocuteur__deux {
+  flex-direction: row-reverse;
+  .japonais {
+    margin-right: 0.6rem;
+  }
+  .japonais::before {
+    border-bottom: 1rem solid white;
+    border-right: 1rem solid transparent;
+    top: 1.5rem;
+    right: -1rem;
+  }
 }
