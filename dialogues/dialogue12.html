@@ -3,60 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Cours de japonais</title>
-
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     />
-
     <link rel="stylesheet" href="../style.css" />
   </head>
+  <!-- 
 
+
+ -->
+   <!-- HEADER -->
+   <header>
+    <div class="header">
+      <div class="header__toggle">
+        <div class="header__toggle--menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="menu__liste"><a href="../index.html"><i class="fas fa-home"></i>　メインページ</li></a>
+        <li class="menu__liste">
+          <a href="#"
+            ><i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- toggle furigana-->
+    <div class="toggle__help">
+      <div class="toggle__furigana">
+        <input
+          type="checkbox"
+          id="furigana"
+          class="toggle__furigana--checkbox"
+          name="furigana"
+        />
+        <label for="furigana" class="toggle__furigana--label"> あ </label>
+      </div>
+      <!-- toggle français -->
+      <div class="toggle__traduction">
+        <input
+          type="checkbox"
+          id="french"
+          class="toggle__traduction--checkbox"
+          name="traduction"
+        />
+        <label for="french" class="toggle__traduction--label">
+          <div class="toggle__traduction--label--element"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!--  -->
   <body>
-    <!-- HEADER -->
-    <header>
-      <div class="header">
-        <div class="header__toggle">
-          <div class="header__toggle--menu">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <ul class="menu">
-          <li class="menu__liste"><i class="fas fa-home"></i>　メインページ</li>
-          <li class="menu__liste">
-            <i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
-          </li>
-        </ul>
-      </div>
-      <!-- toggle furigana-->
-      <div class="toggle__help">
-        <div class="toggle__furigana">
-          <input
-            type="checkbox"
-            id="furigana"
-            class="toggle__furigana--checkbox"
-            name="furigana"
-          />
-          <label for="furigana" class="toggle__furigana--label"> あ </label>
-        </div>
-        <!-- toggle français -->
-        <div class="toggle__traduction">
-          <input
-            type="checkbox"
-            id="french"
-            class="toggle__traduction--checkbox"
-            name="traduction"
-          />
-          <label for="traduction" class="toggle__traduction--label"> </label>
-        </div>
-      </div>
-    </header>
+  
 
     <a href="../index.html"><i class="fas fa-home"></i></a>
     <section class="dialogue">
@@ -167,6 +173,8 @@
     </section>
 
     <!--  -->
-    <script src="help.js"></script>
+    <script src="../help.js"></script>
+    <script src="../button.js"></script>
+    <script src="../scrolleffect.js"></script>
   </body>
 </html>
