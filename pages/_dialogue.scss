@@ -5,7 +5,7 @@ section {
   text-align: center;
 }
 
-.dialogue,
+.summary__dialogue,
 .dialogue__page {
   background: rgb(209, 206, 206);
   padding-bottom: 2rem;
@@ -13,6 +13,9 @@ section {
   h1 {
     padding: 1rem;
     font-size: 2rem;
+  }
+  .version {
+    margin-bottom: 1rem;
   }
 }
 
@@ -34,6 +37,7 @@ section {
 }
 
 // HEAD PROFILS GENERAL
+.summary__dialogue__head,
 .dialogue__head {
   background-color: black;
   color: white;
@@ -46,12 +50,15 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
+.summary__dialogue__head :nth-child(1),
 .dialogue__head :nth-child(1) {
   flex-basis: 100%;
 }
+.summary__dialogue__head__profil,
 .dialogue__head__profil {
   margin: 1rem auto;
 }
+.summary__dialogue__head__profil img,
 .dialogue__head__profil img {
   width: 7rem;
   border-radius: 50%;
@@ -59,10 +66,6 @@ section {
 }
 
 // FIN HEAD PROFIL GENERAL
-
-.dialogue__head--text {
-  flex-direction: row;
-}
 
 .card {
   background: beige;

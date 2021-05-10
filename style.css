@@ -137,6 +137,7 @@ header {
           align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header__toggle {
@@ -291,17 +292,22 @@ section {
   text-align: center;
 }
 
-.dialogue,
+.summary__dialogue,
 .dialogue__page {
   background: #d1cece;
   padding-bottom: 2rem;
   color: #000000;
 }
 
-.dialogue h1,
+.summary__dialogue h1,
 .dialogue__page h1 {
   padding: 1rem;
   font-size: 2rem;
+}
+
+.summary__dialogue .version,
+.dialogue__page .version {
+  margin-bottom: 1rem;
 }
 
 .dialogue__situation {
@@ -325,6 +331,7 @@ section {
   }
 }
 
+.summary__dialogue__head,
 .dialogue__head {
   background-color: black;
   color: white;
@@ -343,26 +350,22 @@ section {
           justify-content: center;
 }
 
+.summary__dialogue__head :nth-child(1),
 .dialogue__head :nth-child(1) {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
+.summary__dialogue__head__profil,
 .dialogue__head__profil {
   margin: 1rem auto;
 }
 
+.summary__dialogue__head__profil img,
 .dialogue__head__profil img {
   width: 7rem;
   border-radius: 50%;
   margin: auto 0.2rem;
-}
-
-.dialogue__head--text {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .card {
