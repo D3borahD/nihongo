@@ -73,11 +73,13 @@ rt {
   font-weight: bold;
 }
 
-ruby:hover {
+ruby:hover,
+ruby:active {
   cursor: pointer;
 }
 
-ruby:hover rt {
+ruby:hover rt,
+ruby:active rt {
   visibility: visible;
 }
 

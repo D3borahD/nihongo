@@ -5,7 +5,8 @@ rt {
   font-weight: bold;
 }
 
-ruby:hover {
+ruby:hover,
+ruby:active {
   cursor: pointer;
   rt {
     visibility: visible;

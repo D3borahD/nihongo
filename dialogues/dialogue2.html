@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours de japonais</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+   <!-- 
+
+     HEADER 
+    
+    -->
+   <header>
+    <div class="header">
+      <div class="header__toggle">
+        <div class="header__toggle--menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="menu__liste"><a href="../index.html"><i class="fas fa-home"></i>　メインページ</li></a>
+        <li class="menu__liste">
+          <a href="#"
+            ><i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- toggle furigana-->
+    <div class="toggle__help">
+      <div class="toggle__furigana">
+        <input
+          type="checkbox"
+          id="furigana"
+          class="toggle__furigana--checkbox"
+          name="furigana"
+        />
+        <label for="furigana" class="toggle__furigana--label"> あ </label>
+      </div>
+      <!-- toggle français -->
+      <div class="toggle__traduction">
+        <input
+          type="checkbox"
+          id="french"
+          class="toggle__traduction--checkbox"
+          name="traduction"
+        />
+        <label for="french" class="toggle__traduction--label">
+          <div class="toggle__traduction--label--element"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!--  -->
+
+  <body>
+    <section class="dialogue__page">
+      <h1>#2 : <ruby>道<rt>みち</rt></ruby>を<ruby>尋<rt>たず</rt></ruby>ねる</h1>
+    
+      <div class="dialogue__head">
+        <h2>キャラクター</h2>
+        <div class="dialogue__head__profil">
+          <img src="../images/florine.png" alt="profil Florine">
+          <p>ヤシンさん</p>
+        </div>
+          <div class="dialogue__head__profil">
+            <img src="../images/aline.png" alt="profil Aline">
+            <p>フロリンさん</p>
+          </div>
+      </div>
+
+      <div class="dialogue__situation"><p>Florine est au Japon. Elle est perdue et demande son chemin pour se rendre à la gare. Elle rencontre Aline qui va l’aider.</p></div> 
+        
+      <div class="script">
+
+<!-- 
+    script à modifier
+ -->
+
+
+        <!-- Dialogue un -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/florine.png" alt="profil Florine">
+            <div class="japonais">
+              <p>すみません<br><ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>ったようなんですが。<br><ruby>私<rt>わたし</rt></ruby>の<ruby>地図<rt>ちず</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>なので<ruby>読<rt>よ</rt></ruby>みにくいんです。<br><ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>はどこですか。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Excusez-moi. Je pense être perdue. Mon plan est en japonais donc c’est difficile à lire. Où est la gare de Shibuya?</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue deux -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/aline.png" alt="profil Aline">
+            <div class="japonais">
+              <p><ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>ですか。<br>
+                えっと、この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>こう</rt></ruby>って、<ruby>次<rt>つぎ</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に。。。<br>
+                ああ、じゃなくて、<ruby>次<rt>つぎ</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。<br>
+                それから、<ruby>二番目<rt>にばんめ</rt></ruby>の<ruby>交差点<rt>こうさてん</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。<br>
+                <ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby><ruby>銀行<rt>ぎんこう</rt></ruby>の<ruby>向<rt>む</rt></ruby>かい<ruby>側<rt>がわ</rt></ruby>です。
+              </p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>La gare de Shibuya? Eh bien, continuez tout droit et tournez à gauche au prochain feu... Euh, non désolée, tournez à droite au feu. Au deuxième croisement, tournez à gauche. La gare de Shibuya se trouve en face de la Banque de Tokyo.</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue trois -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/florine.png" alt="profil Florine">
+            <div class="japonais">
+              <p>
+                すみません、この<ruby>道<rt>みち</rt></ruby>をまっすぐ
+                <ruby>行<rt>こう</rt></ruby>って．．．<br> 
+                それから ? <br>
+                もう<ruby>一度<rt>いちど</rt></ruby><ruby>言<rt>げん</rt></ruby>っていただけますか？
+              </p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Désolée, (je dois) continuer tout droit... et après ?
+                Pouvez-vous répéter svp ? </p> 
+          </div>
+        </div>
+        
+        <!-- Dialogue quatre -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/aline.png" alt="profil Aline">
+            <div class="japonais">
+              <p>それから、<ruby>次<rt>つぎ</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>Au feu, tournez à droite.</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue cinq -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/florine.png" alt="profil Florine">
+              <div class="japonais">
+                <p><ruby>分<rt>わ</rt></ruby>かりました。<br>
+                    そして、
+                    <ruby>二番目<rt>にばんめ</rt></ruby>の
+                    <ruby>交差点<rt>こうさてん</rt></ruby>を
+                    <ruby>左<rt>ひだり</rt></ruby>に
+                    <ruby>曲<rt>ま</rt></ruby>がるんですね</p>
+              </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Je comprends. Et après (je dois) tourner ensuite à gauche à la deuxième intersection.</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue six-->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/aline.png" alt="profil Aline">
+            <div class="japonais">
+              <p>はい、そうです。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>Oui, c’est ça.</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue  sept-->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/florine.png" alt="profil Florine">
+              <div class="japonais">
+                <p>どうもありがとうございました。</p>
+              </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Merci beaucoup !</p> 
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- 
+
+     -->
+    <script src="../help.js"></script>
+    <script src="../button.js"></script>
+    <script src="../scrolleffect.js"></script>
+  </body>
+</html>
+
+
