@@ -12,7 +12,13 @@ ruby:active {
     visibility: visible;
   }
 }
-rt.active {
+
+//class non nécessaire ??? //
+// rt.active {
+//   visibility: visible;
+// }
+
+.active {
   visibility: visible;
 }
 
@@ -22,3 +28,8 @@ rt.active {
 .francais.active {
   visibility: visible;
 }
+
+// class aide JS/////
+// .blue {
+//   color: blue;
+// }

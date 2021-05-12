@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours de japonais</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+   <!-- 
+
+     HEADER 
+    
+    -->
+   <header>
+    <div class="header">
+      <div class="header__toggle">
+        <div class="header__toggle--menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="menu__liste"><a href="../index.html"><i class="fas fa-home"></i>　メインページ</li></a>
+        <li class="menu__liste">
+          <a href="#"
+            ><i class="far fa-comments"></i>　<ruby>対話<rt>たいわ</rt></ruby>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- toggle furigana-->
+    <div class="toggle__help">
+      <div class="toggle__furigana">
+        <input
+          type="checkbox"
+          id="furigana"
+          class="toggle__furigana--checkbox"
+          name="furigana"
+        />
+        <label for="furigana" class="toggle__furigana--label"> あ </label>
+      </div>
+      <!-- toggle français -->
+      <div class="toggle__traduction">
+        <input
+          type="checkbox"
+          id="french"
+          class="toggle__traduction--checkbox"
+          name="traduction"
+        />
+        <label for="french" class="toggle__traduction--label">
+          <div class="toggle__traduction--label--element"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!--  -->
+
+  <body>
+    <section class="dialogue__page">
+      <h1>#3 : <ruby>買<rt>か</rt>い</ruby><ruby>物<rt>もの</rt></ruby>をする</h1>
+    
+      <div class="dialogue__head">
+        <h2>キャラクター</h2>
+        <div class="dialogue__head__profil">
+          <img src="../images/deb.png" alt="profil Deborah">
+          <p>デボラさん</p>
+        </div>
+          <div class="dialogue__head__profil">
+            <img src="../images/florine.png" alt="profil Florine">
+            <p>フロリンさん</p>
+          </div>
+      </div>
+
+      <div class="dialogue__situation"><p>Deborah est dans un magasin à Tokyo. Elle demande de l’aide à Florine, la vendeuse du magasin.</p></div> 
+        
+      <div class="script">
+
+<!-- 
+    script à modifier
+ -->
+
+
+        <!-- Dialogue un -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/deb.png" alt="profil Deborah">
+            <div class="japonais">
+              <p>いらっしゃいませ。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Bonjour et bienvenue</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue deux -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/florine.png" alt="profil Florine">
+            <div class="japonais">
+              <p>あのう、<ruby>和服<rt>わふく</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>はどこですか。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>Euh… Où se trouve le rayon vêtement japonais ?</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue trois -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/deb.png" alt="profil Deborah">
+            <div class="japonais">
+              <p><ruby>２階<rt>にかい</rt></ruby>です。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Au deuxième étage.</p> 
+          </div>
+        </div>
+        
+        <div class="dialogue__situation"><p>Florine arrive au 2ème étage</p></div> 
+        <!-- Dialogue quatre -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/deb.png" alt="profil Deborah">
+            <div class="japonais">
+              <p>いらっしゃいませ、<ruby>何<rt>なに</rt></ruby>をお<ruby>探<rt>さが</rt></ruby>しですか？</p> 
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Bonjour, que recherchez-vous ?</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue cinq -->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/florine.png" alt="profil Florine">
+            <div class="japonais">
+                <p>こんにちは、<ruby>着物<rt>きもの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいのですが。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>Bonjour. J’aimerais acheter un kimono.</p> 
+          </div>
+        </div>
+
+        <!-- Dialogue six-->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/deb.png" alt="profil Deborah">
+            <div class="japonais">
+              <p>はい、お<ruby>好<rt>すき</rt></ruby>きな<ruby>色<rt>いろ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>Oui, Quelle couleur aimez-vous ? (= Quelle couleur recherchez-vous ?)</p> 
+          </div>
+        </div>
+        
+        <!-- Dialogue  sept-->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__deux">
+            <img src="../images/florine.png" alt="profil Florine">
+              <div class="japonais">
+                <p>えっと。<ruby>赤<rt>あか</rt></ruby>い<ruby>着物<rt>きもの</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいのですが。</p>
+              </div>
+          </div>
+          <div class="francais interlocuteur__deux--francais">
+            <p>Euh… J’en aimerais un rouge.</p> 
+          </div>
+        </div>
+
+         <!-- Dialogue 8-->
+        <div class="script__interlocuteur">
+          <div class="script__interlocuteur__un">
+            <img src="../images/deb.png" alt="profil Deborah">
+            <div class="japonais">
+              <p><ruby>承知<rt>しょうち</rt></ruby>いたしました。</p>
+            </div>
+          </div>
+          <div class="francais interlocuteur__un--francais">
+            <p>D’accord. (formel)</p> 
+          </div>
+        </div>
+
+        <div class="dialogue__situation"><p>Deborah présente un kimono rouge</p></div> 
+
+         <!-- Dialogue  9-->
+         <div class="script__interlocuteur">
+            <div class="script__interlocuteur__deux">
+              <img src="../images/florine.png" alt="profil Florine">
+                <div class="japonais">
+                  <p>この<ruby>着物<rt>きもの</rt></ruby>はかわいいですね。<br>おいくらくらいですか。</p>
+                </div>
+            </div>
+            <div class="francais interlocuteur__deux--francais">
+              <p>Ce kimono est très joli.　Combien coûte-t-il ?</p> 
+            </div>
+          </div>
+  
+           <!-- Dialogue 10-->
+          <div class="script__interlocuteur">
+            <div class="script__interlocuteur__un">
+              <img src="../images/deb.png" alt="profil Deborah">
+              <div class="japonais">
+                <p><ruby>5万円<rt>ごまんえん</rt></ruby>です。</p>
+              </div>
+            </div>
+            <div class="francais interlocuteur__un--francais">
+              <p>50 000  ¥ (environ 400€)</p> 
+            </div>
+          </div>
+
+           <!-- Dialogue  11-->
+        <div class="script__interlocuteur">
+            <div class="script__interlocuteur__deux">
+              <img src="../images/florine.png" alt="profil Florine">
+                <div class="japonais">
+                  <p>ちょっと。。。</p>
+                </div>
+            </div>
+            <div class="francais interlocuteur__deux--francais">
+              <p>C’est un peu… (sous-entendu cher)</p> 
+            </div>
+          </div>
+  
+           <!-- Dialogue 12-->
+          <div class="script__interlocuteur">
+            <div class="script__interlocuteur__un">
+              <img src="../images/deb.png" alt="profil Deborah">
+              <div class="japonais">
+                <p>あ！<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。<br>もうわけ<ruby>今日<rt>きょう</rt></ruby>、セ―ルがあります。<br>この<ruby>着物<rt>きもの</rt></ruby>はわずか<ruby>3万円<rt>さんまんえん</rt></ruby>です。</p>
+              </div>
+            </div>
+            <div class="francais interlocuteur__un--francais">
+              <p>Ah ! Veuillez m’excuser. Aujourd’hui, il y a une promotion. Ce kimono coûte seulement 30 000 ¥. <br>(environ 240€).</p> 
+            </div>
+          </div>
+
+           <!-- Dialogue  13-->
+        <div class="script__interlocuteur">
+            <div class="script__interlocuteur__deux">
+              <img src="../images/florine.png" alt="profil Florine">
+                <div class="japonais">
+                  <p>いいですね！ <br>
+                    この<ruby>着物<rt>きみの</rt></ruby>のサイズは<ruby>何<rt>なん</rt></ruby>ですか。</p>
+                </div>
+            </div>
+            <div class="francais interlocuteur__deux--francais">
+              <p>C’est intéressant… Quelle est la taille de ce kimono ?</p> 
+            </div>
+          </div>
+  
+           <!-- Dialogue 14-->
+          <div class="script__interlocuteur">
+            <div class="script__interlocuteur__un">
+              <img src="../images/deb.png" alt="profil Deborah">
+              <div class="japonais">
+                <p><ruby>9<rt>きゅう</rt></ruby>です。</p>
+              </div>
+            </div>
+            <div class="francais interlocuteur__un--francais">
+              <p>C’est du 9 (taille 36 en Europe).</p> 
+            </div>
+          </div>
+        
+           <!-- Dialogue  15-->
+        <div class="script__interlocuteur">
+            <div class="script__interlocuteur__deux">
+              <img src="../images/florine.png" alt="profil Florine">
+                <div class="japonais">
+                  <p>もう<ruby>少<rt>すこ</rt></ruby>し、<ruby>大<rt>おお</rt></ruby>きいのありませんか。<br>
+                    <ruby>11号<rt>じゅういちご</rt></ruby>を<ruby>着<rt>き</rt></ruby>てみてもいいですか。
+                    </p>
+                </div>
+            </div>
+            <div class="francais interlocuteur__deux--francais">
+              <p>Vous auriez un peu plus grand ?　Je peux essayer la taille 11 (taille 38 en Europe) ?</p> 
+            </div>
+          </div>
+         
+           <!-- Dialogue 16-->
+          <div class="script__interlocuteur">
+            <div class="script__interlocuteur__un">
+              <img src="../images/deb.png" alt="profil Deborah">
+              <div class="japonais">
+                <p>はい、どうぞ。</p>
+              </div>
+            </div>
+            <div class="francais interlocuteur__un--francais">
+              <p>Oui, le voici.</p> 
+            </div>
+          </div>
+
+           <!-- Dialogue  17-->
+        <div class="script__interlocuteur">
+            <div class="script__interlocuteur__deux">
+              <img src="../images/florine.png" alt="profil Florine">
+                <div class="japonais">
+                  <p><ruby>試着室<rt>しちゃくしつ</rt></ruby>はどこですか。
+                </p>
+                </div>
+            </div>
+            <div class="francais interlocuteur__deux--francais">
+              <p>Où sont les cabines d’essayage ?</p> 
+            </div>
+          </div>
+  
+           <!-- Dialogue 18-->
+          <div class="script__interlocuteur">
+            <div class="script__interlocuteur__un">
+              <img src="../images/deb.png" alt="profil Deborah">
+              <div class="japonais">
+                <p>あちらです。</p>
+              </div>
+            </div>
+            <div class="francais interlocuteur__un--francais">
+              <p>Là-bas.</p> 
+            </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- 
+
+     -->
+    <script src="../help.js"></script>
+    <script src="../button.js"></script>
+    <script src="../scrolleffect.js"></script>
+  </body>
+</html>
+
+

@@ -83,7 +83,7 @@ ruby:active rt {
   visibility: visible;
 }
 
-rt.active {
+.active {
   visibility: visible;
 }
 
