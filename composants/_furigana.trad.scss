@@ -13,11 +13,6 @@ ruby:active {
   }
 }
 
-//class non nécessaire ??? //
-// rt.active {
-//   visibility: visible;
-// }
-
 .active {
   visibility: visible;
 }
@@ -29,7 +24,9 @@ ruby:active {
   visibility: visible;
 }
 
-// class aide JS/////
-// .blue {
-//   color: blue;
-// }
+// Active furigana au click on kangi  <=> JS /////
+.help-furigana {
+  rt {
+    visibility: visible;
+  }
+}

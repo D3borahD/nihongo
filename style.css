@@ -95,6 +95,10 @@ ruby:active rt {
   visibility: visible;
 }
 
+.help-furigana rt {
+  visibility: visible;
+}
+
 li {
   list-style: none;
 }

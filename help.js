@@ -22,37 +22,14 @@ for (var i = 0; i < toggleTraduction.length; i++) {
   })(toggleTraduction[i]);
 }
 
-//furigana on click =======> en cours
-
-// const rubyTous = document.querySelectorAll("ruby");
-
-// for (var i = 0; i < rubyTous.length; i++) {
-//   var ruby = rubyTous[i];
-//   var bleuit = function () {
-//     this.classList.toggle("blue");
-//     var rt = document.querySelector("rt");
-
-//     rt.classList.toggle("blue");
-
-//     // if (this.classList.contains)
-//   };
-//   ruby.addEventListener("click", bleuit);
-// }
-
-// :::::::::::::::::::::::::::::::
+// Active furigana au click on kangi  <=> CSS/////
 
 const rubyTous = document.querySelectorAll("ruby");
 
 for (var i = 0; i < rubyTous.length; i++) {
   var ruby = rubyTous[i];
-  var bleuit = function () {
-    this.classList.toggle("blue");
-    var rt = document.querySelector("rt");
-    rt.classList.toggle("blue");
-
-    // if (this.classList.contains)
+  var helpFurigana = function () {
+    this.classList.toggle("help-furigana");
   };
-  ruby.addEventListener("click", bleuit);
+  ruby.addEventListener("click", helpFurigana);
 }
-
-// $$$$$$$$$$$$$$$$
