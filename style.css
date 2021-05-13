@@ -66,6 +66,19 @@
   color: black;
 }
 
+.arrow__navigation {
+  background-color: white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+
+.arrow__navigation a,
+.arrow__navigation a:visited {
+  color: black;
+}
+
 rt {
   color: red;
   font-size: 0.8rem;
@@ -331,6 +344,9 @@ section {
 }
 
 @media screen and (min-width: 800px) {
+  section {
+    margin-top: 10%;
+  }
   .dialogue__card {
     display: -ms-grid;
     display: grid;
@@ -434,7 +450,7 @@ section {
 }
 
 .script__interlocuteur {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
 }
 

@@ -29,6 +29,9 @@ section {
 }
 
 @media screen and(min-width:800px) {
+  section {
+    margin-top: 10%;
+  }
   .dialogue__card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -109,7 +112,7 @@ section {
 // DIALOGUE
 
 .script__interlocuteur {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   img {
     width: 50px;
