@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Shippori+Mincho+B1:wght@400;600;700&display=swap");
 .toggle__furigana {
   border: 1px solid white;
   background: white;
@@ -53,12 +54,12 @@
   font-size: 0.9rem;
   cursor: pointer;
   font-weight: bold;
-  width: 4.8rem;
+  width: 7rem;
   text-align: center;
   border: 1px solid gray;
   border-radius: 5px;
   background: #e7e6e6;
-  padding-bottom: 5px;
+  padding: 1rem;
 }
 
 .bouton-read a,
@@ -298,6 +299,7 @@ body {
   color: white;
   background: #1d1b1b;
   font-size: 1rem;
+  font-family: "Roboto Slab", serif;
 }
 
 ul {
@@ -307,6 +309,8 @@ ul {
 .japonais p {
   font-size: 1.6rem;
   letter-spacing: 0.3em;
+  font-family: "Shippori Mincho B1", serif;
+  line-height: 3rem;
 }
 
 section {
