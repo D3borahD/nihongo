@@ -54,15 +54,14 @@
 
 //Button LECTURE
 .bouton-read {
-  font-size: 0.9rem;
   cursor: pointer;
   font-weight: bold;
-  width: 7rem;
+  width: auto;
   text-align: center;
   border: 1px solid gray;
   border-radius: 5px;
   background: rgb(231, 230, 230);
-  padding: 1rem;
+  padding: 0.5rem;
   a,
   a:visited {
     color: black;

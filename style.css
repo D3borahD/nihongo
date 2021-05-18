@@ -51,15 +51,14 @@
 }
 
 .bouton-read {
-  font-size: 0.9rem;
   cursor: pointer;
   font-weight: bold;
-  width: 7rem;
+  width: auto;
   text-align: center;
   border: 1px solid gray;
   border-radius: 5px;
   background: #e7e6e6;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .bouton-read a,
